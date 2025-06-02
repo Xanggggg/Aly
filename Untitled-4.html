@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Aly</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fef6ff, #cbefff);
+      color: #444;
+      overflow-x: hidden;
+    }
+
+    .centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .heart-container, .question-box, .letter {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 24px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+      padding: 30px 25px;
+      text-align: center;
+      max-width: 650px;
+      width: 100%;
+      margin: 20px auto;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .heart {
+      font-size: 70px;
+      color: #87cefa;
+      cursor: pointer;
+      animation: pulse 1s infinite alternate;
+      transition: transform 0.3s ease;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.2); }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    button {
+      padding: 12px 28px;
+      background-color: #ffbad2;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      margin: 10px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff9fbf;
+    }
+
+    .letter h1 {
+      color: #ff6f91;
+      font-family: 'Georgia', serif;
+      font-size: 1.8rem;
+    }
+
+    .letter p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      text-align: left;
+      white-space: pre-wrap;
+      color: #333;
+    }
+
+    .photo {
+      width: 180px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .music-player {
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    body::before {
+      content: "💗 💕 💖 💘 💝 💓";
+      font-size: 20px;
+      position: fixed;
+      top: -10%;
+      width: 100%;
+      text-align: center;
+      animation: floatHearts 10s linear infinite;
+      opacity: 0.2;
+      pointer-events: none;
+    }
+
+    @keyframes floatHearts {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(120vh); }
+    }
+  </style>
+</head>
+<body>
+  <div class="centered">
+    <div class="heart-container" id="heartStage">
+      <h2 style="font-family: 'Georgia', serif;">Tap the sky blue heart until it's full 💙</h2>
+      <div class="heart" id="heart">💙</div>
+      <p id="tapCount">0 / 14 taps</p>
+    </div>
+
+    <div class="question-box hidden" id="questionStage">
+      <h2 style="font-family: 'Georgia', serif;">Are you ready for the surprise?</h2>
+      <button onclick="revealLetter()">YES 💖</button>
+      <button onclick="revealLetter()">NO 💖</button>
+    </div>
+
+    <div class="question-box hidden" id="musicStage">
+      <p><strong>Play this song as you read the surprise because it reminds me of you 🎶</strong></p>
+      <audio class="music-player" controls autoplay loop>
+        <source src="file:///C:/Users/jeremie%20limos/Downloads/yung%20kai%20-%20blue%20(Official%20Audio)%20[%20ezmp3.cc%20].mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <button onclick="showLetter()">Read the Letter 💌</button>
+    </div>
+
+    <div class="letter hidden" id="letter">
+      <img src="file:///C:/Users/jeremie%20limos/Downloads/ALY.jfif" alt="Aly's Photo" class="photo" />
+      <h1>To My Alyy 💌</h1>
+      <p>
+Hi, my Alyy! I know you’re wondering kung para saan tong letter na to HAAHAHAHA. Pero ayun na nga, it’s been 8 months since our very first conversation. And yes, hindi naging tuloy-tuloy yung pag uusap natin and that’s on me. I know soafer gulo at labo ko po, and I admit naman, I messed things up along the way. I’m really sorry for that, lovee. 
+
+Pero alam mo, kahit ilang beses napuputol yung communication natin, there’s always this connection that I can’t explain and it never fades. It stays with me. Sobrang weirddd kasi kahit matagal tayong hindi nag usap, I still feel close to you, I can’t unmiss you, still think about you all the time. I tried not to fall, but I did and I have no regrets about that, because it’s you.
+
+Even during the times na hindi us nag uusap, there was always a hope in my heart that maybe, just maybe, we’d find our way back to each other. Kahit ilang beses na tayong nag-goodbye, the hope never left. And now here we are 1 month and 8 days of talking again and this time, I want it to be different na.
+
+So today, lovee, I’m asking you this…
+May I pursue you? 🥺
+
+I may not know everything about courting someone, but I’m willing to learn for you. I’m ready to take the risk, fight for you, and choose you every single day because you deserve nothing less than that. I know I’m not perfect, but I promise to give my best to become the best version of myself for you.
+
+You know I’m soafer indecisive, but ever since we met, the only thing I’ve ever been sure of is you. Yes! I am sure na gusto kita and mahal kita! Lagi mo kasing sinasabi hindi HAAHAHAHAHA. I want you to know that I love you so much, and I’ll love you even more during your worst!
+
+I’ll stay by your side, whether you need me or not. I won’t promise that I’ll always be perfect, but I will always be present. I’ll show up for you, lovee, in all the ways I can.
+
+Honestly, I’m scared po kasi I’m new to this. Commitment can be hard. But if it means I get to grow with you, understand you, and be there for you then I’m willing to face all of that. 
+
+But please, don’t ever feel pressured by anything I say or do. What matters most is your decision, your pace, your heart. No matter what, just know that na sure ako sayo, and I’ll pursue you with all that I am.
+
+I want to know you more, Alyy — your joys, your fears, your dreams, everything. I want to discover the world through your eyes. And maybe, if you’ll let me, I can be part of that world too.
+
+And lovee, I know we’re both busy and that’s okay. I’m willing to wait naman. Let’s keep chasing our dreams, I’ll be your number one supporter — the one who lifts you up and stands beside you when things get tough. 
+
+In a world full of chaos, I’ll be your constant. Just remember na meron kang ako!
+
+And one more thing — If ever na dumating yung time na mapagod ka, malungkot ka, o mawalan ka ng gana sa mundo please don’t forget, you can rest your heart with me. Kahit di mo sabihin, I’ll always try to understand. I’ll listen to the things you say and even to the things you can’t find the words for.
+
+I’ll never stop choosing you, lovee, not just when it’s easy but especially when it’s hard. Because you’re worth it. Every part of you is worth it!
+I love you so much, Alyyy!!!💙😘
+
+Sincerely Yours,  
+Ry
+      </p>
+    </div>
+  </div>
+
+  <script>
+    let taps = 0;
+    const heart = document.getElementById('heart');
+    const tapCount = document.getElementById('tapCount');
+    const heartStage = document.getElementById('heartStage');
+    const questionStage = document.getElementById('questionStage');
+    const musicStage = document.getElementById('musicStage');
+    const letter = document.getElementById('letter');
+
+    heart.onclick = () => {
+      if (taps < 7) {
+        taps++;
+        tapCount.textContent = `${taps} / 7 taps`;
+        if (taps === 7) {
+          heartStage.classList.add('hidden');
+          questionStage.classList.remove('hidden');
+        }
+      }
+    };
+
+    function revealLetter() {
+      questionStage.classList.add('hidden');
+      musicStage.classList.remove('hidden');
+    }
+
+    function showLetter() {
+      musicStage.classList.add('hidden');
+      letter.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
